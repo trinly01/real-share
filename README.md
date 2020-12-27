@@ -24,7 +24,7 @@ yarn add real-share
 
 ## CDN
 ```html
-<script  src="https://unpkg.com/shared-node/dist/index.js"></script>
+<script src="https://unpkg.com/real-share/client.js"></script>
 ```
 
   
@@ -62,10 +62,10 @@ realShare(3000, {
 ## Client
 ```javascript
 async function init () {
-  const { sharedCodeClient } = require('shared-node')
-  // const { sharedCodeClient } = sharedNode // for CDN
+  const realShare = require('real-share/client')
+  // for CDN global variable named 'realShare'
 
-  const { human } = await sharedCodeClient('http://localhost:3000')
+  const { human } = await realShare('http://localhost:3131')
   console.log(await  human.run(100)) // Mr. Pogi is running at 100km/h
 }
 init()

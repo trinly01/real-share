@@ -1,6 +1,6 @@
 {
   "name": "real-share",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Call a remote function or method of a remote object from a Node.js App thru websocket that can be shared to any web frontend frameworks or mobile apps",
   "main": "dist/",
   "scripts": {
@@ -9,8 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trinly01/shared-node.git"
+    "url": "git+https://github.com/trinly01/real-share.git"
   },
+  "bugs": {
+    "url": "https://github.com/trinly01/real-share/issues"
+  },
+  "homepage": "https://github.com/trinly01/real-share#readme",
+  "author": "Trinmar A Boado <timi.boado@gmail.com>",
+  "license": "ISC",
   "keywords": [
     "rpc",
     "call",
@@ -30,12 +36,6 @@
     "bind",
     "application"
   ],
-  "author": "Trinmar A Boado <timi.boado@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/trinly01/ink-html/issues"
-  },
-  "homepage": "https://github.com/trinly01/shared-node#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "babel-loader": "^8.2.2",

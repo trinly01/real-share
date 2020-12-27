@@ -1,12 +1,11 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals')
 
 client = {
   mode: 'production',
   entry: './clientCode.js',
   output: {
     globalObject: 'this',
-    path: path.resolve('dist'),
+    path: path.resolve(),
     filename: 'client.js',
     library: 'realShare',
     libraryTarget: 'umd',
@@ -31,7 +30,7 @@ server = {
   entry: './serverCode.js',
   output: {
     globalObject: 'this',
-    path: path.resolve('dist'),
+    path: path.resolve(),
     filename: 'server.js',
     library: 'realShare',
     libraryTarget: 'umd',

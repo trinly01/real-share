@@ -1,4 +1,4 @@
-const realShare = require('./dist/server.js')
+const realShare = require('./server.js')
 
 class Person {
   constructor() {
