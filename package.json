@@ -1,0 +1,47 @@
+{
+  "name": "real-share",
+  "version": "2.0.0",
+  "description": "Call a remote function or method of a remote object from a Node.js App thru websocket that can be shared to any web frontend frameworks or mobile apps",
+  "main": "dist/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinly01/shared-node.git"
+  },
+  "keywords": [
+    "rpc",
+    "call",
+    "rpclib",
+    "rpclibrary",
+    "remote",
+    "procedure",
+    "remote procedure call",
+    "microservice",
+    "rest",
+    "unified application framework",
+    "tunnel",
+    "eventsourcing",
+    "agnostic",
+    "independent",
+    "framework",
+    "bind",
+    "application"
+  ],
+  "author": "Trinmar A Boado <timi.boado@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinly01/ink-html/issues"
+  },
+  "homepage": "https://github.com/trinly01/shared-node#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "socket.io": "^3.0.4",
+    "socket.io-client": "^3.0.4",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0"
+  }
+}

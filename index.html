@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="https://unpkg.com/shared-node/dist/index.js"></script> -->
+  <script src="./dist/client.js"></script>
+</head>
+
+<body>
+  <button onclick="run(100)">slow</button>
+  <button onclick="eat('big banana')">eat</button>
+  <button onclick="talk('ang pogi ko')">talk</button>
+  <script>
+    let person = null;
+    (async () => {
+      const { human } = await realShare('http://localhost:3000')
+      person = human
+      console.log(await human.run(999))
+    })()
+
+    const run = async speed => alert(await person.run(speed))
+    const eat = async food => alert(await person.eat(food))
+    const talk = async speech => alert(await person.talk(speech))
+  </script>
+</body>
+
+</html>
